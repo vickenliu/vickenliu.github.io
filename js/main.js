@@ -15,6 +15,8 @@ $(document).ready(function(){
   $('#callaps').find('a').click(function(e){
     e.preventDefault();
     var fn=$(this).data('fn');
+    $('#callaps').find('a').removeClass('active');
+    $(this).addClass('active');
     $('#outlet').fadeOut().empty();
     $('#'+fn).fadeIn();
   });

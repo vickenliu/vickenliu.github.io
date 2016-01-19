@@ -86,6 +86,9 @@
         margin: 25px 0;
         list-style-type: none;
       }
+      #callaps li a.active{
+        background-color: gray;
+      }
       #callaps li a{
         display: block;
         width: 100%;
