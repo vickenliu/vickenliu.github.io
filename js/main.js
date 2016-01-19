@@ -25,7 +25,7 @@ $(document).ready(function(){
       type:'get',
       success:function(data){
         $('#outlet,#content').fadeOut();
-        $('#outlet').empty().append(data).fadeIn();
+        $('#outlet').empty().prepend("<button id='return'>GO TO LIST</button>").append(data).fadeIn();
       }
     })
   });
