@@ -18,5 +18,17 @@ $(document).ready(function(){
     $('#'+fn).fadeIn();
   });
 
+  $('#bloglist').find('a').click(function(){
+    $('#menu-icon').trigger('click');
+    var page=$(this).data('fn');
+    $.ajax('../blog/'+page+'.html',{
+      type:'get',
+      success:function(data){
+        $('#outlet,#content').fadeOut();
+        $('#outlet').empty().append(data).fadeIn();
+      }
+    })
+  });
+
 
 });

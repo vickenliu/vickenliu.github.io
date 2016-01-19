@@ -127,3 +127,23 @@
        #bloglist li a:hover{
         color: black;
        }
+       #outlet{
+        display: none;
+        padding:25px;
+        margin:0px auto;
+        margin-top: 150px;
+        width: 80%;
+        background-color: rgba(255,255,255,0.9);
+       }
+       #outlet .subheader h2{
+        font-size: 30px;
+        margin:10px;
+       }
+       #outlet ul.questions li{
+        display: block;
+        margin-top:15px;
+       }
+       #outlet ul.questions li p{
+        margin-top: 5px;
+        line-height: 25px;
+       }
