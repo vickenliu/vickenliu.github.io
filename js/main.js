@@ -21,7 +21,7 @@ $(document).ready(function(){
   $('#bloglist').find('a').click(function(){
     $('#menu-icon').trigger('click');
     var page=$(this).data('fn');
-    $.ajax('../blog/'+page+'.html',{
+    $.ajax('../blog/'+page,{
       type:'get',
       success:function(data){
         $('#outlet,#content').fadeOut();
