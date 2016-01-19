@@ -30,5 +30,11 @@ $(document).ready(function(){
     })
   });
 
+  $('#return').click(function(){
+    $('#outlet').fadeOut();
+    $('#menu-icon').trigger('click');
+    $('#content').fadeIn();
+  });
+
 
 });

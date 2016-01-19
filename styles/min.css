@@ -128,12 +128,26 @@
         color: black;
        }
        #outlet{
-        display: none;
+        position: relative;
+        display: block;
         padding:25px;
         margin:0px auto;
         margin-top: 150px;
         width: 80%;
         background-color: rgba(255,255,255,0.9);
+       }
+       #return{
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        width: 10%;
+        height: 50px;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: black;
+        font-weight: 500px;
+        cursor: pointer;
        }
        #outlet .subheader h2{
         font-size: 30px;
