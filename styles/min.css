@@ -129,7 +129,7 @@
        }
        #outlet{
         position: relative;
-        display: block;
+        display: none;
         padding:25px;
         margin:0px auto;
         margin-top: 150px;
