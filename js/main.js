@@ -5,10 +5,12 @@ $(document).ready(function(){
     $('#callaps').slideToggle(500,function(){
       icon.find('.menuspan').toggleClass('callaps');
       if(icon.find('.menuspan').hasClass('callaps')){
-        icon.find('h2').text('CLOSE');}
+        icon.find('h2').text('CLOSE');
+       }
       else{
         $('#content').fadeOut();
-        icon.find('h2').text('MENU');}
+        icon.find('h2').text('MENU');
+        $('#callaps').find('a').removeClass('active');}
     });
   });
 
@@ -18,7 +20,10 @@ $(document).ready(function(){
     $('#callaps').find('a').removeClass('active');
     $(this).addClass('active');
     $('#outlet').fadeOut().empty();
-    $('#'+fn).fadeIn();
+    if(fn=='notready')
+      $('#content').fadeOut();
+    else
+      $('#'+fn).fadeIn();
   });
 
   $('#bloglist').find('a').click(function(){
