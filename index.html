@@ -3,14 +3,37 @@
 <head>
   <title>Vicken's Blog</title>
   <link rel="stylesheet" type="text/css" href="styles/min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
   <header id="header">
-    <h1>Phase-0 , C1 Blogs</h1>
+    <a href="/"><img src="images/logo-vic.png" alt="logo"></a>
+    <nav id='menu'>
+      <div id='menu-icon'>
+        <h2>MENU</h2>
+        <div class='menuspan'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul id='callaps'>
+        <li><a href="/" title="">Home</a></li>
+        <li><a href="" title="" data-fn='content'>Blog</a></li>
+        <li><a href="/" title="">WishList</a></li>
+        <li><a href="/" title="">Contact</a></li>
+      </ul>
+    </nav>
   </header><!-- /header -->
-  <div id="nav">
-    <a href="blog/c1-reflection-blog.html">REFLECTION BLOG</a>
-    <a href="blog/c1-time-habits-blog.html">Time & Habits BLOG</a>
+  <div class='mainwrapper'>
+    <div id='content'>
+    <h2>Blog List</h2>
+    <ul id='bloglist'>
+        <li><a href="blog/c1-reflection-blog.html" title="">>>>  C1-REFLECTION</a></li>
+        <li><a href="blog/c1-time-habits-blog.html" title="">>>>  C1-TIME & HABITS</a></li>
+      </ul>  
+    </div>
   </div>
+  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
         padding: 0px;
         font-family: "Lucida Console", Monaco, monospace;
         overflow: hidden;
+        box-sizing: border-box;
       }
       a{
         text-decoration: none;
@@ -14,71 +15,115 @@
         background-color:#D1D7DA;
       }
       #header{
-        width: 100%;
-        height: 100px;
-        display: block;
-        text-align: center;
-        margin: 0px auto;
-        background-color: #FFF380;
-      }
-      #header h1{
-        font-size: 45px;
-        line-height: 100px;
-      }
-      #goback{
-        width: 10%;
-        height: 50px;
         position: absolute;
-        left: 5%;
-        top: 30px;
-        border: 1px solid black;
-        color: white;
-        line-height: 50px;
-        font-size: 16px;
-        border-radius: 5px;
-        background-color: #333;
-      }
-      #nav{
-        margin: 20px auto;
-        width: 80%;
+        z-index: 3;
+        width: 100%;
+        height: 150px;
         display: block;
         text-align: center;
-      }
-      #nav a{
-        text-decoration: none;
-        float: left;
-        display: block;
-        margin: 10px 3%;
-        width: 40%;
-        height: 70px;
-        border: 1px solid black;
-        font-size: 20px;
-        line-height: 70px;
-        background-color: white;
-        font-weight: bold;
-        color:black;
-      }
-      #nav a:hover{
-        background-color: black;
-        color: white;
-        transition: all 0.5s;
-      }
-      article{
-        padding: 10px;
-        width:80%;
         margin: 0px auto;
-        background-color:white;
+        background-color: transparent;
+        overflow: visible;
       }
-      section{
-        box-sizing: border-box;
-        padding-left:20px;
-        width:inherit;
-        border:1px solid black;
-        margin:10px auto;
+      #header a{
+        position: absolute;
+        top:30px;
+        left: 10%; 
       }
-      section p,h1{
-        margin: 5px;
+      #header a:hover{
+        background-color: rgba(233,233,233,0.5);
       }
-      em{
-        color:red;
+      #menu{
+        display: block;
       }
+      #menu-icon{
+        display: block;
+        position: absolute;
+        right: 15%;
+        top: 26px;
+        cursor: pointer;
+      }
+      #menu-icon h2, .menuspan{
+        color: white;
+        display:inline-block;
+        margin-right: 20px;
+      }
+      #menu-icon span{
+        display: block;
+        width: 45px;
+        margin-top:12px; 
+        border-bottom: 2px solid white;
+        transition: all 1s;
+      }
+      #menu-icon .menuspan.callaps span:nth-child(2){
+        transform: rotate(45deg);
+        transition: all 1s;
+      }
+     #menu-icon .menuspan.callaps span:nth-child(1){
+        transform: rotate(-45deg) translate(-12px,7px);
+        transition: all 1s;
+      }
+     #menu-icon .menuspan.callaps span:nth-child(3){
+        border-bottom: 0px solid white;
+      }
+      #callaps{
+        z-index: 1;
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        bottom: 0;
+        height: 90vh;
+        width: 30%;
+        background-color: rgba(0,0,0,0.7);
+        padding-top: 40px;
+        padding: auto;
+      }
+      #callaps li{
+        text-align: left;
+        width: 100%;
+        display: block;
+        margin: 25px 0;
+        list-style-type: none;
+      }
+      #callaps li a{
+        display: block;
+        width: 100%;
+        color: white;
+        font-size: 25px;
+        height: 35px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 40px;
+      }
+      .mainwrapper{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url('../images/sky.jpeg') bottom center no-repeat;
+        background-attachment: fixed;
+      }
+      #content{
+        display: none;
+        width: 50%;
+        margin-top: 155px;
+        margin-left: 10%;
+        background-color: rgba(255,255,255,0.6);
+        padding-left: 10%;
+      }
+      #content h2{
+        display: block;
+        margin: 10px;
+      }
+      #bloglist li{
+        display: block;
+        margin: 20px 0;
+      }
+      #bloglist li a{
+        font-size: 20px;
+        color: white;
+      }
+       #bloglist li a:hover{
+        color: black;
+       }
