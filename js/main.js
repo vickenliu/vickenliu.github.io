@@ -43,5 +43,6 @@ $(document).ready(function(){
     $('#outlet').fadeOut();
     $('#menu-icon').trigger('click');
     $('#content').fadeIn();
+    $('#callaps').find("a[data-fn='content']").addClass('active');
   });
 });
