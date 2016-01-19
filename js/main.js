@@ -31,7 +31,7 @@ $(document).ready(function(){
   });
 
 
-  $('.mainwrapper').on('click',function(){
+  $('.mainwrapper').on('click','#return',function(){
     $('#outlet').fadeOut();
     $('#menu-icon').trigger('click');
     $('#content').fadeIn();
