@@ -30,11 +30,10 @@ $(document).ready(function(){
     })
   });
 
-  $('#return').click(function(){
+
+  $('.mainwrapper').on('click',function(){
     $('#outlet').fadeOut();
     $('#menu-icon').trigger('click');
     $('#content').fadeIn();
   });
-
-
 });
