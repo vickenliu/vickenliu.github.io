@@ -27,6 +27,7 @@ nav{
   display: block;
 }
 #menuicon{
+  padding: 5px;
   float: right;
   position: relative;
   right: 20%;
@@ -34,12 +35,26 @@ nav{
   width: 15%;
   display: block;
 }
+#menuicon:hover{
+  cursor: pointer;
+}
 #menuicon span{
   float: right;
   width: 100%;
   display: block;
   border-bottom: 2px solid white;
-  margin-top: 13px;
+  margin-top: 10px;
+}
+#menuicon.callaps span:nth-child(2){
+  transform:rotate(45deg);
+  transition:all 0.3s;
+}
+#menuicon.callaps span:nth-child(1){
+  transform:rotate(-45deg) translate(-25% , 8px);
+  transition:all 0.3s;
+}
+#menuicon.callaps span:nth-child(3){
+  width: 0;
 }
 #header nav ul{
   float: right;
@@ -47,10 +62,10 @@ nav{
   position: relative;
   right: 0;
   top :0px;
-  margin-top: 20px;
-  display: block;
+  margin-top: 30px;
+  display: none;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: rgba(0,0,0,0.9);
   list-style: none;
 }
@@ -68,25 +83,67 @@ nav{
   color: white;
 }
 #header ul li.active{
-  background-color: rgba(0,0,0,0.6);
-  transition: all,0.3s;
+  background-color: rgba(0,0,0,1);
 }
 #header ul li.active a{
   color: gold;
-  transition: all,0.3s;
 }
 #slogon{
   z-index: 0;
+  position: absolute;
+  top: 30vh;
+  left: 10%;
   display: block;
   width: 80%;
-  margin: 10vh auto;
-  background-color:white;
 }
 #slogon p{
   z-index: 0;
   display: block;
-  clear: both;
   color: white;
-  font-size: 4.5vw;
+  font-size: 4.8vw;
+}
+
+@media (min-width: 550px) {
+  body {
+  background:url('../images/sky.jpeg') no-repeat fixed bottom center;
+}
+#logo{
+  font-size: 6vw;
+}
+#menuicon{
+  width: 10%;
+}
+#menuicon span{
+  margin-top: 16px;
+}
+#menuicon.callaps span:nth-child(1){
+  transform:rotate(-45deg) translate(-18% , 13px);
+}
+#header ul li{
+  height:45px; 
+  margin-top: 6vh;
+}
+#header ul li:hover a{
+  background-color: rgba(0,0,0,1);
+  color: gold;
+  transition:all 0.3s;
+}
+#header ul li a{
+  font-size: 4vw;
+}
+#slogon{
+  z-index: 0;
+  position: absolute;
+  top: 30vh;
+  left: 10%;
+  display: block;
+  width: 60%;
+}
+#slogon p{
+  z-index: 0;
+  display: block;
+  color: white;
+  font-size: 3vw;
+}
 
 }
