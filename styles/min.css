@@ -163,9 +163,10 @@ footer{
   left: 0;
 }
 
+
 @media (min-width: 550px) {
 #frontwrapper {
-  background:url('../images/sky.jpeg') no-repeat fixed bottom center;
+  background:url('../images/sky.jpeg') no-repeat fixed top center;
 }
 #logo{
   font-size: 6vw;
@@ -248,5 +249,12 @@ body{
   font-size: 2vw;
 }
 
+}
+@media (min-height: 1000px){
+  #frontwrapper {
+  background:url('../images/phone.jpg') no-repeat fixed top center;
+  background-size: cover;
+}
 
 }
+
