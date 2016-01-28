@@ -220,7 +220,7 @@ body{
   font-size: 4vw;
 }
 #content a{
-  width: 50%;
+  width: 100%;
   background-color: transparent;
   padding: 0px;
   font-size: 3vw;
@@ -230,10 +230,10 @@ body{
   background-color: rgba(200,200,200,0.5);
 }
 #content a.button{
-  width: 20%;
+  width: 25%;
 }
 #content h3{
-  font-size: 3vw;
+  font-size: 2.3vw;
 }
 #content .block{
   padding: 10px;
@@ -246,7 +246,7 @@ body{
   margin-bottom: 25px;
 }
 #content .block p{
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 }
