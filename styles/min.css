@@ -3,6 +3,7 @@
 }
 body{
   background:url('../images/phone.jpg') repeat-y fixed top center;
+
 }
 #frontwrapper {
   background:url('../images/phone.jpg') no-repeat fixed top center;
@@ -165,6 +166,11 @@ footer{
 
 
 @media (min-width: 550px) {
+body{
+  background: none;
+  background-color: #CADBE9;
+  
+}
 #frontwrapper {
   background:url('../images/sky.jpeg') no-repeat fixed top center;
 }
@@ -205,9 +211,6 @@ footer{
   display: block;
   color: white;
   font-size: 3vw;
-}
-body{
-  background:url('../images/phone.jpg') repeat fixed left top;
 }
 #content{
   left: 0;
