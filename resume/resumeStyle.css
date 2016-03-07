@@ -52,7 +52,7 @@ header h2{
 	padding: 5px 15px;
 	background-color: gray;
 }
-.educationRecord,.project,.workhistory{
+.educationRecord,.projectsRecord,.workRecord{
 	margin:10px 0px;
 	padding: 5px;
 	background-color: #eee;
@@ -61,18 +61,16 @@ header h2{
 
 
 }
-.educationRecord h3,.project h3,.workhistory h3{
+.educationRecord h3,.projectsRecord h3,.workRecord h3{
 	font-size: 1em;
 	margin: 5px;
 }
-.educationRecord h3 strong{
-	font-size: 1.1em;
-}
+
 #projects{
 	width: 100%;
 	padding: 5px 15px;
 }
-.project{
+.projectRecord{
 	background-color: gray;
 }
 
@@ -121,7 +119,7 @@ margin-left: 5%;
 	font-size: 1.2em;
 }
 .educationRecord h3 strong{
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 #projects{
 	background-color: #aaa;
@@ -151,7 +149,7 @@ margin-left: 7%;
 	font-size: 1.3em;
 }
 .educationRecord h3 strong{
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 #projects{
 	background-color: #aaa;
