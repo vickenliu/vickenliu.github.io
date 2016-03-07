@@ -132,4 +132,5 @@ function displayBio() {
 	}
 }
 
+
 },{"./constant":1,"./display":2}]},{},[3]);
