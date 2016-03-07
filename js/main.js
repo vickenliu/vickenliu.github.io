@@ -7,8 +7,13 @@ $(document).ready(function(){
     });
   });
 
-
-
+/*$(document).ready(()=>{
+  let icon=$(this);
+  $('#header').find('ul').slideToggle(500,()=>{
+    icon.toggleClass('callaps');
+  });
+});
+*/
 
 
 
@@ -45,4 +50,5 @@ $(document).ready(function(){
     $('#content').fadeIn();
     $('#callaps').find("a[data-fn='content']").addClass('active');
   });*/
+
 });
