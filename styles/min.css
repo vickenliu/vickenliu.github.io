@@ -167,7 +167,7 @@ footer{
 
 @media (min-width: 550px) {
 body{
-  background:url('../images/phone.jpg') no-repeat fixed top center;
+  background:url('../images/sky.jpg') no-repeat fixed top center;
   background-size: cover;
   
 }
