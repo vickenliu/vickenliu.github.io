@@ -58,7 +58,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background: url("../images/background.jpeg") no-repeat center;
+  background: url("http://res.cloudinary.com/vicken/image/upload/c_scale,w_2000/v1465899482/personal/background.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover; }
 
@@ -214,6 +214,8 @@ li {
       font-weight: 500; }
 
 @media screen and (max-width: 813px) {
+  #landing {
+    background: url("http://res.cloudinary.com/vicken/image/upload/c_scale,h_500/v1465899482/personal/background.jpg") no-repeat center; }
   #arrow {
     right: 7vw;
     bottom: 5vh; }
