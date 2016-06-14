@@ -214,6 +214,9 @@ li{
     &:last-child{
       margin-bottom: 20px;
     }
+    &:hover img{
+      opacity: 1;
+    }
     &:hover .cover{
       z-index: -1111;
     }

@@ -250,6 +250,8 @@ li {
     margin: 5px auto; }
     .project:last-child {
       margin-bottom: 20px; }
+    .project:hover img {
+      opacity: 1; }
     .project:hover .cover {
       z-index: -1111; }
   #about {

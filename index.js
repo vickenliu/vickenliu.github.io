@@ -18,12 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   })
 
+  bindProjectEven()
+
+  $(window).resize(bindProjectEven)
+
 });
+
+function bindProjectEven(){
+  if(window.innerWidth<813){
+    $('.project').on('click','img',mobileNavprojects);
+  }
+}
 
 function correctarrowdirection(){
   document.body.scrollTop > projectOffset+vh/2 ? $('#arrow img').addClass('up') :
   $('#arrow img').removeClass('up')
 }
+
 
 function changepage(e){
   if(vw<=813){
@@ -44,6 +55,7 @@ function changepage(e){
   }
 }
 
+
 function scrollFunc(e) {
     e = e || window.event;
     if (e.wheelDelta) {
@@ -61,4 +73,9 @@ function scrollFunc(e) {
             return 'down';
         }
     }
+}
+
+function mobileNavprojects(e){
+  var ele= e.target
+  $(ele).parent('.project').find('a')[0].click()
 }
