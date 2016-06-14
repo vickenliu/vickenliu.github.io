@@ -175,12 +175,15 @@ li{
 }
 
 @media screen and (max-width:813px){
-  #landing{
-    background: url("http://res.cloudinary.com/vicken/image/upload/c_scale,h_500/v1465899482/personal/background.jpg") no-repeat center;
-  }
   #arrow{
     right: 7vw;
     bottom: 5vh;
+  }
+  #landing{
+    background-image: url("http://res.cloudinary.com/vicken/image/upload/c_scale,h_700/v1465899482/personal/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   .content{
     font-size: 2.2em;
