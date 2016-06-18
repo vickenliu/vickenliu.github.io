@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function bindProjectEven(){
-  if(window.innerWidth<813){
+  vh= window.innerHeight
+  vw= window.innerWidth
+  if(vh<813){
     $('.project').on('click','img',mobileNavprojects);
   }
 }
@@ -49,7 +51,7 @@ function changepage(e){
   }else if(scrollFunc(e)==='up'&& document.body.scrollTop>projectOffset &&  document.body.scrollTop<(aboutOffset-vh/7)){
     // document.body.scrollTop=vh
     $('body').stop().animate({scrollTop:vh},'500',correctarrowdirection)
-  }else if(scrollFunc(e)==='up'&& document.body.scrollTop<(projectOffset-vh/5)){
+  }else if(scrollFunc(e)==='up'&& document.body.scrollTop<(projectOffset-vh/10)){
     // document.body.scrollTop=0
     $('body').stop().animate({scrollTop:0},'500',correctarrowdirection)
   }
