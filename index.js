@@ -58,6 +58,7 @@ function changepage(e){
 }
 
 
+
 function scrollFunc(e) {
     e = e || window.event;
     if (e.wheelDelta) {
