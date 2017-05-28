@@ -1,3 +1,7 @@
 images/
 node_modules
 *.log
+*.gitignore
+*.DS_Store
+
+*.babelrc
