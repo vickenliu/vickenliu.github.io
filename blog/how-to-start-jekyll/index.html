@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>How to start Jekyll - Hello & Ni Hao! I'm Vicken Liu</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Hello & Ni Hao! I'm Vicken Liu" property="og:site_name">
+  
+    <meta content="How to start Jekyll" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="I am a full-stack web application developer
+" property="og:description">
+  
+  
+    <meta content="http://vickenliu.github.io/how-to-start-jekyll/" property="og:url">
+  
+  
+    <meta content="2018-02-08T16:30:04+13:00" property="article:published_time">
+    <meta content="http://vickenliu.github.io/about/" property="article:author">
+  
+  
+    <meta content="http://vickenliu.github.io/blog/assets/img/selfie.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Personal" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="How to start Jekyll">
+  
+  
+    <meta name="twitter:url" content="http://vickenliu.github.io/how-to-start-jekyll/">
+  
+  
+    <meta name="twitter:description" content="I am a full-stack web application developer
+">
+  
+  
+    <meta name="twitter:image:src" content="http://vickenliu.github.io/blog/assets/img/selfie.png">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/blog/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/blog/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/blog/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/blog/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/blog/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/blog/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/blog/"><img src="/blog/assets/img/selfie.png" alt="Vicken Liu"></a>
+      </div>
+      <div class="author-name">Vicken Liu</div>
+      <p>I am a web application developer. Always hungry to keep learning.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li class="github"><a href="http://github.com/vickenliu" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/https://nz.linkedin.com/in/vicken-liu-29a06288" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:vicken.liu@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2018 &copy; Vicken Liu</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">How to start Jekyll</h1>
+        <div class="page-date"><span>2018, Feb 08&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Last few days, I was searching on google, and was linked to a blog page. It was build with jekyll. I have seen it couple of times. later I googled a bit more about it. and decided to give it a go :)</p>
+
+<p>It looks maybe a bit overwhelming, but it actually is surprisingly easy.</p>
+
+<p>Jekyll is build with ruby. so you need to have ruby, but don’t worry, you don’t need to know Ruby; I believe Mac OS have ruby installed. It is very easy to follow <a href="https://jekyllrb.com/docs/quickstart/">jekyll’s</a> instructions.</p>
+
+<p>But here I am just trying to share what i have experienced, you need to have <strong>version &gt; 2.4.</strong> as you need to install gems <strong>jekyll</strong> and <strong>bundle</strong>.</p>
+
+<p>Once you have finished the <a href="https://jekyllrb.com/docs/quickstart/">Jekyll’s quick-start</a>, you should have a up and running blog. what you can do is commit all your changes and push to github. you will have a live blog for free.</p>
+
+<h2 id="for-other-non-github-servers">For other non-github servers</h2>
+<p>like me, I want to serve my blog as <strong>/blog</strong>. what should i do?</p>
+
+<p>as we can see, the <em>_site</em> folder contains all the static files we need. what you could do it just copy files &amp; folders in <em>_site</em> to be served on your server.</p>
+
+<p>also you could just Jekyll’s CLI command, suppose you in your blog’s directory.
+<code class="highlighter-rouge">jekyll build --destination &lt;destination&gt;</code> the <code class="highlighter-rouge">destination</code> in the &lt;&gt; is your path like mine <code class="highlighter-rouge">../mysite/blog</code>.</p>
+
+<p><strong>PS</strong>: <em>because I server my blog in a seperate folder under my site. you need to update your blog’s <code class="highlighter-rouge">_config.yml</code>. both *url</em> and <em>baseurl</em> should be updated accordingly. otherwise you might not be able to have proper style and viewing blog.*</p>
+
+<p>then it will pipe the ready made html files to your site’s folder.</p>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=How to start Jekyll&url=http://vickenliu.github.io/how-to-start-jekyll/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://vickenliu.github.io/how-to-start-jekyll/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://vickenliu.github.io/how-to-start-jekyll/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/blog/tags#Personal" class="tag">&#35; Personal</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//mr-Liu.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-96841345-1', 'auto');
+    ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
