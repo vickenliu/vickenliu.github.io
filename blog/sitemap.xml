@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://vickenliu.github.io/blog/conference-on-javascript/</loc>
+<loc>http://vickenliu.github.io/blog/2017/09/10/conference-on-javascript.html</loc>
 <lastmod>2017-09-10T09:00:00+12:00</lastmod>
 </url>
 <url>
-<loc>http://vickenliu.github.io/blog/10-tips-to-improve-your-workflow/</loc>
+<loc>http://vickenliu.github.io/blog/2017/09/12/10-tips-to-improve-your-workflow.html</loc>
 <lastmod>2017-09-12T09:00:00+12:00</lastmod>
 </url>
 <url>
-<loc>http://vickenliu.github.io/blog/how-to-start-programming/</loc>
+<loc>http://vickenliu.github.io/blog/2017/09/12/how-to-start-programming.html</loc>
 <lastmod>2017-09-12T09:00:00+12:00</lastmod>
 </url>
 <url>
-<loc>http://vickenliu.github.io/blog/the-best-organizer-software/</loc>
+<loc>http://vickenliu.github.io/blog/2017/09/12/the-best-organizer-software.html</loc>
 <lastmod>2017-09-12T09:00:00+12:00</lastmod>
 </url>
 <url>
-<loc>http://vickenliu.github.io/blog/how-to-start-jekyll/</loc>
+<loc>http://vickenliu.github.io/blog/2018/02/08/happy-year-of-dog.html</loc>
+<lastmod>2018-02-08T16:30:04+13:00</lastmod>
+</url>
+<url>
+<loc>http://vickenliu.github.io/blog/2018/02/08/how-to-start-jekyll.html</loc>
 <lastmod>2018-02-08T16:30:04+13:00</lastmod>
 </url>
 <url>
