@@ -105,7 +105,7 @@
         $(rows[i]).find('.totalFixedInterest').text(Math.round(myInterest.totalInterst));
         $(rows[i]).find('.totalPrinciplePaid').text(Math.round(myInterest.principlePaid - regularPayInterest.principlePaid));
         $(rows[i]).find('.totalInterestSaved').text(Math.round(regularPayInterest.totalInterst - myInterest.totalInterst));
-        $(rows[i]).find('.paidOff').text((newPayoffInterest.paidOffAt).toFixed(1));
+        $(rows[i]).find('.paidOff').text((newPayoffInterest.paidOffAt || term).toFixed(1));
         $(rows[i]).find('.list-group').removeClass('d-none');
       }
     });

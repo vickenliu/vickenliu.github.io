@@ -12,9 +12,10 @@
   <meta name="og:title" content="Vicken Liu | Web Development" />
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Vicken Liu | Web Developer" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <link rel="stylesheet" href="./index.css">
   <script src='./index.js' async></script>
 </head>
 
@@ -25,10 +26,10 @@
         <th scope="col">Loan Amount</th>
         <th scope="col">Interest Rate</th>
         <th scope="col">Term (years)</th>
-        <th scope="col">P+I Repayment</th>
-        <th scope="col">Total Interest</th>
-        <th scope="col">Your Payment</th>
-        <th scope="col">Fixed Term (years)</th>
+        <th scope="col">P+I Repayment <br><span data-toggle="tooltip" data-placement="bottom" title="Every fortnight minimum payment">&#128184</span></th>
+        <th scope="col">Total Interest <br><span data-toggle="tooltip" data-placement="bottom" title="Interest in the whole term">&#x1F354 &#x1F354 &#x1F354</span></th>
+        <th scope="col" class="bg-secondary">Your Payment</th>
+        <th scope="col" class="bg-secondary">Fixed Term (years)</th>
         <th scope="col">Total Interest for fixed term</th>
         <th scope="col">Differance</th>
       </tr>
@@ -50,10 +51,10 @@
         <td>
           <span class="totalAllInterest"></span>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customPayment" placeholder="500" name='customizedPayment'>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customeTerm" placeholder="1" name='customizedTerm'>
         </td>
         <td>
@@ -67,7 +68,7 @@
             </li>
             <li>
               <strong>Extra principle paid in fixed term: </strong>
-              <span class="totalPrinciplePaid"></span>
+              <span class="totalPrinciplePaid"></span> &#128176
             </li>
             <li>
               <strong>Loan paid off in :</strong>
@@ -92,10 +93,10 @@
         <td>
           <span class="totalAllInterest"></span>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customPayment" placeholder="500" name='customizedPayment'>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customeTerm" placeholder="1" name='customizedTerm'>
         </td>
         <td>
@@ -134,10 +135,10 @@
         <td>
           <span class="totalAllInterest"></span>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customPayment" placeholder="500" name='customizedPayment'>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customeTerm" placeholder="1" name='customizedTerm'>
         </td>
         <td>
@@ -176,10 +177,10 @@
         <td>
           <span class="totalAllInterest"></span>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customPayment" placeholder="500" name='customizedPayment'>
         </td>
-        <td>
+        <td class="bg-secondary">
           <input type="text" class="form-control customeTerm" placeholder="1" name='customizedTerm'>
         </td>
         <td>
@@ -209,6 +210,24 @@
       </tr>
     </tbody>
   </table>
+  <div class="bd-callout bd-callout-warning">
+    <h5 id="associating-help-text-with-form-controls">Tips how to use</h5>
+    <small>The payment are caculated by every FORTNIGHT by default</small>
+    <br>
+    <p>Fill in loan details like amount, interest rate, and loan term on the left 3 columns</p>
+    <p>The gray area is where you put in your customized numbers; <br>
+      <code class="highlighter-rouge">Your Payment</code> is the amount you are about to pay, I reckon `P+I Repayment` plus your extra<br>
+      <code class="highlighter-rouge">Fixed Term</code> is the short term fixed period, like to fixed 1 or x years.
+    </p>
+    <br>
+    <h3>Example</h3>
+    <p>
+      loan amount: 100,000 @ 3.99% for 24 years, regular principle & interest payment is 249$ for a fortnight.<br>
+      if we pay extra <i>100</i> a fortnight, and in fixed 1 year, we can see the intrest we saved and extra principle we paid.<br>
+      <strong>Please remenber, the more extra you pay either against your principle(bank keep it) or your OFFSET loan(you keep it), the intrest saved is our tax-free profit, yay!</strong>
+    <p>
+    <img class="img-fluid" src="https://res.cloudinary.com/vicken/image/upload/v1554505905/Screen_Shot_2019-04-06_at_12.06.45_PM_zz1znb.png" alt="sample image">
+  </div>
   <script>
     (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
