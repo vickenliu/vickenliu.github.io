@@ -7,17 +7,19 @@ on:
     branches: 
       - 'master'
 env:
-  PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
-  HOSTNAME : ${{ secrets.SITE_HOST  }}
-  USER_NAME : ${{ secrets.SITE_USER  }}
+  PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
+  HOSTNAME : ${{ secrets.SITE_HOST }}
+  USER_NAME : ${{ secrets.SITE_USER }}
 
 jobs:
   Pulish:
     name: Publish website
     runs-on: ubuntu-latest
-    - name: pull latest on server
-      run: |
-        echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
-        ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME}
-        cd vickenliu.github.io/ && git pull origin master -s recursive -X theirs
-        exit
+    steps:
+      - uses: actions/checkout@v2 
+      - name: pull latest on server
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME}
+          cd vickenliu.github.io/ && git pull origin master -s recursive -X theirs
+          exit
